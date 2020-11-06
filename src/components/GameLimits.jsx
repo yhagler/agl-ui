@@ -17,49 +17,48 @@ function GameLimits() {
                     <Form>
                         <Form.Row className="align-items-center">
                             <Col xs={2} className="my-1">
-                                <Form.Label htmlFor="inputPassword5">Home</Form.Label>
                                 <Form.Control
                                     as="select"
                                     className="mr-sm-2"
                                     id="inlineFormCustomSelect"
                                     custom
                                 >
-                                    <option value="0">Player...</option>
+                                    <option value="0">Home...</option>
                                     <option value="1">Yaakov Hagler</option>
                                     <option value="2">Yehuda Brick</option>
                                     <option value="3">Avi Ennis</option>
                                 </Form.Control>
                             </Col>
                             <Col xs={2} className="my-1">
-                                <Form.Label htmlFor="inputPassword5">Away</Form.Label>
                                 <Form.Control
                                     as="select"
                                     className="mr-sm-2"
                                     id="inlineFormCustomSelect"
                                     custom
                                 >
-                                    <option value="0">Everyone</option>
-                                    <option value="1">Yaakov Hagler</option>
+                                    <option value="0">Away...</option>
+                                    <option value="1">Everyone</option>
                                     <option value="2">Yehuda Brick</option>
                                     <option value="3">Avi Ennis</option>
+                                    <option value="4">Yaakov Hagler</option>
+
                                 </Form.Control>
                             </Col>
                             <Col xs={2} className="my-1">
-                                <Form.Label htmlFor="inputPassword5">Week</Form.Label>
                                 <Form.Control
                                     as="select"
                                     className="mr-sm-2"
                                     id="inlineFormCustomSelect"
                                     custom
                                 >
-                                    <option value="0">Current Week</option>
+                                    <option value="0">Week...</option>
                                     <option value="1">Week 1</option>
                                     <option value="2">Week 2</option>
                                     <option value="3">Week 3</option>
                                 </Form.Control>
                             </Col>
                             <Col xs="auto" className="my-1">
-                                <Button type="submit">Submit</Button>
+                                <Button type="submit">Search</Button>
                             </Col>
                         </Form.Row>
                     </Form>
