@@ -5,19 +5,19 @@ import Table from 'react-bootstrap/Table'
 import Pagination from 'react-bootstrap/Pagination'
 
 
-function GameLimits() {
+function Scouting() {
     return (
         <div style={{paddingLeft: '100px', paddingRight: '100px', height: '100%'}}>
             <div style={{backgroundColor: 'white'}}>
                 <div style={{fontWeight: 'bold', fontSize: '45px', padding: '15px'}}>
-                    Game Limits
+                    Scouting
                 </div>
                 
                 <div style={{paddingLeft: '15px', paddingBottom: '15px', paddingTop: '15px', borderTop: '1px solid #D2D2D2', borderBottom: '1px solid #D2D2D2'}}>
                     <Form>
                         <Form.Row className="align-items-center">
                             <Col xs={2} className="my-1">
-                                <Form.Label htmlFor="inputPassword5">Home</Form.Label>
+                                <Form.Label htmlFor="inputPassword5">Player</Form.Label>
                                 <Form.Control
                                     as="select"
                                     className="mr-sm-2"
@@ -31,17 +31,17 @@ function GameLimits() {
                                 </Form.Control>
                             </Col>
                             <Col xs={2} className="my-1">
-                                <Form.Label htmlFor="inputPassword5">Away</Form.Label>
+                                <Form.Label htmlFor="inputPassword5">Game</Form.Label>
                                 <Form.Control
                                     as="select"
                                     className="mr-sm-2"
                                     id="inlineFormCustomSelect"
                                     custom
                                 >
-                                    <option value="0">Everyone</option>
-                                    <option value="1">Yaakov Hagler</option>
-                                    <option value="2">Yehuda Brick</option>
-                                    <option value="3">Avi Ennis</option>
+                                    <option value="0">Game...</option>
+                                    <option value="1">Archery</option>
+                                    <option value="2">Pool</option>
+                                    <option value="3">Golf</option>
                                 </Form.Control>
                             </Col>
                             <Col xs={2} className="my-1">
@@ -124,4 +124,4 @@ function GameLimits() {
     )
 };
     
-export default GameLimits;
+export default Scouting;

@@ -1,5 +1,7 @@
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+
 import DateTimePicker from "react-widgets";
 //import React, { useState } from "react";
 
@@ -28,8 +30,8 @@ function AddGame() {
                         <Form.Label column="lg" lg={2}>
                             Home*
                         </Form.Label>
-                        <Col>
-                            <Form.Control as="select" className="mr-sm-2" style={{width: '200px'}}>
+                        <Col xs={5}>
+                            <Form.Control as="select" className="mr-sm-2">
                                 <option>Yaakov Hagler</option>
                                 <option>Yehuda Brick</option>
                                 <option>Avi Ennis</option>
@@ -40,8 +42,8 @@ function AddGame() {
                         <Form.Label column="lg" lg={2}>
                             Away*
                         </Form.Label>
-                        <Col>
-                            <Form.Control as="select" style={{width: '200px'}}>
+                        <Col xs={5}>
+                            <Form.Control as="select">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -54,8 +56,16 @@ function AddGame() {
                         <Form.Label column="lg" lg={2} style={{width:'200px'}}>
                             Comments
                         </Form.Label>
-                        <Col>
+                        <Col xs={5}>
                             <Form.Control size="lg" type="text" />
+                        </Col>
+                    </Form.Row>
+                    <Form.Row>
+                        <Col xs="auto" className="my-1">
+                            <Button type="submit">Submit</Button>
+                        </Col>
+                        <Col xs="auto" className="my-1">
+                            <Button type="reset">Back</Button>
                         </Col>
                     </Form.Row>
                 </Form>
